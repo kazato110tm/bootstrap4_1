@@ -14,5 +14,53 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
+        col-{prefix}-{columns}の合計値12を振り分ける
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2" style="background-color: red;">Red-2</div>
+                <div class="col-sm-8" style="background-color: blue;">Blue-8</div>
+                <div class="col-sm-2" style="background-color: yellow;">Yellow-2</div>
+            </div>
+        </div>
+        <br>
+
+        tableクラスで表をかける<br>
+        table-stripedで１行ごとに色分け<br>
+        table-borderdで要素ごとに線をいれる<br>
+        table-responsiveで表にスクロールバーを追加する<br>
+        <div class="container-fluid">
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>名前</th>
+                            <th>メールアドレス</th>
+                            <th>電話番号</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>太郎</td>
+                            <td>taro@example.com</td>
+                            <td>09011112222</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>次郎</td>
+                            <td>jiro@example.com</td>
+                            <td>09033334444</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>花丸</td>
+                            <td>hanamaru@example.com</td>
+                            <td>09055556666</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </body>
 </html>
